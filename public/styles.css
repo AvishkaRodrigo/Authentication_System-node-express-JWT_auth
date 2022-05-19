@@ -15,7 +15,7 @@ h4, ul, li, p, input, label, button, div, footer{
   font-family: 'Quicksand', sans-serif;
   color: #444;
 }
-h1, h2, h3,a , label{
+h1, h2, h3, h4, a , label, li{
   margin: 0;
   padding: 0;
   font-family: 'Quicksand', sans-serif;
@@ -99,6 +99,11 @@ button{
   font-size: 0.8em;
   font-weight: bold;
 }
+.lapimage {
+  /* height: 200px; */
+  width: 500px;
+}
+
 header{
   display: flex;
   align-items: center;
@@ -136,10 +141,12 @@ header .btn{
 .laptop{
   display: inline-block;
   border-radius: 20px;
-  background: white;
+  background: rgb(89, 89, 89);
+  color: #fafafa;
   position: relative;
   text-align: center;
-  padding: 0 20px 30px 20px
+  padding: 0 20px 30px 20px;
+  opacity: 80%;
 }
 .laptop img{
   width: 100px;

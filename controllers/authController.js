@@ -37,7 +37,7 @@ const handleErrors = (err) => {
 // create JWT
 const maxAge = 60*60*24; // 1 day in sec
 const createToken = (id) => {
-    return jwt.sign({id}, 'Secret', {              // Secret should be replaced with your secret
+    return jwt.sign({id}, 'temp secret', {              // Secret should be replaced with your secret
         expiresIn : maxAge
     });
 };

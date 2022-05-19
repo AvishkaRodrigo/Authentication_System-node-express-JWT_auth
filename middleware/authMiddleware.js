@@ -6,7 +6,7 @@ const requireauth = (req, res, next) => {
 
     //check JWT existance & validity
     if (token){
-        jwt.verify(token, 'Secret', (err, decodedToken) => {   // Secret should be replaced with your secret
+        jwt.verify(token, 'temp secret', (err, decodedToken) => {   // Secret should be replaced with your secret
             if (err) {
                 console.log(err.message);
                 res.redirect('/login');
@@ -27,7 +27,7 @@ const checkuser =  (req, res, next) => {
 
     //check JWT existance & validity
     if (token){
-        jwt.verify(token, 'Secret', async (err, decodedToken) => {   // Secret should be replaced with your secret
+        jwt.verify(token, 'temp secret', async (err, decodedToken) => {   // Secret should be replaced with your secret
             if (err) {
                 console.log(err.message);
                 res.locals.user = null;
